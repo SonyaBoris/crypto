@@ -1,0 +1,23 @@
+.sidebar{
+  background: #fff;
+  border-right: 1px solid #eee;
+  width: 256px;
+  height: 100vh;
+  padding: 24px 8px;
+}
+.logo{
+  margin-left: 24px;
+  margin-bottom: 36px;
+}
+.item{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  border-radius: 32px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.active{
+  background: linear-gradient(270deg, rgba(3, 201, 136, 0.2) 0%, rgba(23, 156, 247, 0.2) 100%);
+}

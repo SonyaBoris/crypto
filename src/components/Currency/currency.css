@@ -1,0 +1,27 @@
+.currency-select{
+  position: absolute;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 8px;
+  width: 76px;
+  height: 96px;
+  background-color: #fff;
+}
+.currency-option{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.active-option{
+  border-radius: 32px;
+  padding: 4px 8px;
+  background: linear-gradient(180deg, rgba(3, 201, 136, 0.2) 0%, rgba(23, 156, 247, 0.2) 100%);
+}

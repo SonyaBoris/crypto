@@ -1,0 +1,33 @@
+.filter{
+  display: grid;  
+  grid-template-columns: 40% 30% 30%;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+.item{
+  display: grid;  
+  grid-template-columns: 40% 30% 30%;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+.item:last-child{
+  border: none;
+}
+.currency{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cur{
+  text-align: end;
+}
+.titleText{
+  display: flex;
+  justify-content: end;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}

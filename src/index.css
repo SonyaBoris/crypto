@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(270deg, rgba(3, 201, 136, 0.05) 0%, rgba(23, 156, 247, 0.05) 100%);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+button{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+.decor{
+  background-image: url(./assets/img/top-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 100%;  
+}
+.main{
+  display: flex;
+}
+.balance-page{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 34%;
+  grid-template-rows: 219px 528px;
+  gap: 15px;
+  margin: 24px;
+}
+.content-block{
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.title-text{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+

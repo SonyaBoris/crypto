@@ -1,0 +1,21 @@
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.row{
+  display: grid;
+  grid-template-columns: 40% 55% 5%;
+  align-items: center;
+}
