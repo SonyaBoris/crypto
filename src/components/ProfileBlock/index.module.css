@@ -4,11 +4,6 @@
   align-items: center;
   margin-bottom: 36px;
 }
-.menu{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
 .table{
   display: flex;
   flex-direction: column;

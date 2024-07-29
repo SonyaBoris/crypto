@@ -1,0 +1,15 @@
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 45px;
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 12px;
+  flex: 2;
+}

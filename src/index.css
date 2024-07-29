@@ -56,7 +56,8 @@ button{
   display: flex;
 }
 .balance-page{
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 65% 34%;
   grid-template-rows: 219px 528px;

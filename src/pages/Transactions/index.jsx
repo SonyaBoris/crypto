@@ -1,6 +1,8 @@
+import TransactionsBlock from "../../components/TransactionsBlock";
+
 const Transactions = () => {
   return ( 
-    <div>Transactions</div>
+   <TransactionsBlock />
    );
 }
  
