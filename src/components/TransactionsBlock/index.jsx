@@ -95,16 +95,16 @@ const TransactionsBlock = () => {
           <h3 className="title-text">Uuid</h3>
         </div>
         {mockTrans.map(item =>
-          <div className={s.filter}>
+          <div key={item.id} className={s.filter}>
             <span>{item.currency}</span>
-            <div>
+            <div className={s.amount}>
               <span>{item.amount}</span>
-              <span>$ 84.36</span>
+              <span className={s.dolar}>$ 84.36</span>
             </div>
             <span>{item.date}</span>
             <span>{item.status}
             </span>
-            <div>
+            <div className={s.uuid}>
               <span>{item.uuid}</span>
               <button>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,25 @@ const TransactionsBlock = () => {
             </div>
           </div>
         )}
-
+        <div className={s.pagination}>
+          <button>
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 1L1.5 5L5.5 9" stroke="black" />
+            </svg>
+            back
+          </button>
+          <button className="pagination active">1</button>
+          <button className="pagination">2</button>
+          <button className="pagination">3</button>
+          <button className="pagination">...</button>
+          <button className="pagination">8</button>
+          <button>
+            next
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 1L4.5 5L0.5 9" stroke="black" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );
