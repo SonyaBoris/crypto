@@ -1,7 +1,7 @@
-import CurrencyBlock from "../../components/CurrencyBlock";
-import Greet from "../../components/Greet";
-import ProfileBlock from "../../components/ProfileBlock";
-import StatisticBlock from "../../components/StatisticBlock";
+import CurrencyBlock from "../../widgets/CurrencyBlock";
+import Greet from "../../widgets/Greet";
+import ProfileBlock from "../../widgets/ProfileBlock";
+import StatisticBlock from "../../widgets/StatisticBlock";
 
 const Balance = () => {
   return (

@@ -9,6 +9,8 @@ import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
 import ChevronLeft from '@mui/icons-material/ChevronLeft';
 import ChevronRight from '@mui/icons-material/ChevronRight';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 const CustomCalendarHeaderRoot = styled('div')({
   display: 'flex',
@@ -42,8 +44,9 @@ function CustomCalendarHeader(props) {
   );
 }
 
-const CustomDatePicker = () => {
-  const [selectedDate, setSelectedDate] = useState(dayjs());
+
+const CustomDatePicker = ({which}) => {
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const handleDateChange = (newValue) => {
     setSelectedDate(newValue);
@@ -53,30 +56,30 @@ const CustomDatePicker = () => {
       <DatePicker
         value={selectedDate}
         onChange={handleDateChange}
+
         slotProps={{
           textField: {
+            placeholder: `Date ${which}`,
             sx: {
               '& .MuiOutlinedInput-notchedOutline': {
                 borderColor: '#eee',
                 borderRadius: '8px',
               },
-              '&:focus .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#eee',
-              },
-              '&:hover .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#eee',
-              },
-              '& .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input': {
-                padding: '11px',
-              },
               '& .MuiOutlinedInput-input': {
-                padding: '10px 26px 10px 12px',
+                padding: '10px 0 10px 12px',
                 outline: 'none',
+              },
+              '& ::placeholder': {
+                color: 'black',
+                opacity: 1, 
               },
             }
           }
         }}
-        slots={{ calendarHeader: CustomCalendarHeader }}
+        slots={{
+          calendarHeader: CustomCalendarHeader,
+          openPickerIcon: KeyboardArrowDownIcon,
+        }}
         format="DD-MM-YYYY"
       />
     </LocalizationProvider>

@@ -1,5 +1,5 @@
 import s from "./index.module.css"
-import CURRENCY from "../../assets/img/Crypto.png"
+import CURRENCY from "../../shared/assets/img/Crypto.png"
 
 const mockCurrency = [
   {

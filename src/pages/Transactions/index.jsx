@@ -1,4 +1,4 @@
-import TransactionsBlock from "../../components/TransactionsBlock";
+import TransactionsBlock from "../../widgets/TransactionsBlock";
 
 const Transactions = () => {
   return ( 

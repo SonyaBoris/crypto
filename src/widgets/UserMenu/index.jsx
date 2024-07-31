@@ -1,8 +1,8 @@
 import s from "./index.module.css"
-import HEAD from "../../assets/img/head.svg"
-import NOTIFICATIONS from "../../assets/img/colocol.svg"
-import SET from "../../assets/img/setting.svg"
-import USER from "../../assets/img/avatar.png"
+import HEAD from "../../shared/assets/img/head.svg"
+import NOTIFICATIONS from "../../shared/assets/img/colocol.svg"
+import SET from "../../shared/assets/img/setting.svg"
+import USER from "../../shared/assets/img/avatar.png"
 
 const UserMenu = () => {
   return (

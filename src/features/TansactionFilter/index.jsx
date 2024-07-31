@@ -95,8 +95,8 @@ const TransactionFilter = () => {
     <div className={s.form}>
       <CustomSelect data={mockCurrencies} name={currencies} title={'currencies'} handleChangeStatuses={handleChange} />
       <CustomSelect data={mockNetworks} name={networks} title={'networks'} handleChangeStatuses={handleChangeNetworks} />
-      <CustomDatePicker />
-      <CustomDatePicker />
+      <CustomDatePicker which={"from"} />
+      <CustomDatePicker which={"to"} />
       <CustomSelect data={mockStatuses} name={statuses} title={'statuses'} handleChangeStatuses={handleChangeStatuses} />
       <SearchInput />
     </div>

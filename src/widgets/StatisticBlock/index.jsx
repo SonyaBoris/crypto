@@ -1,5 +1,5 @@
 import s from "./index.module.css"
-import ARROW from "../../assets/img/arrow.svg"
+import ARROW from "../../shared/assets/img/arrow.svg"
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
 

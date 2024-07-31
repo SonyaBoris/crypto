@@ -1,8 +1,8 @@
 import "./sidebar.css"
-import LOGO from "../../assets/img/logo.png"
-import ICONBALANCE from "../../assets/img/IconBalance.svg"
-import ICONTRANS from "../../assets/img/IconT.svg"
-import ICONWIDTH from "../../assets/img/IconWidth.svg"
+import LOGO from "../../shared/assets/img/logo.png"
+import ICONBALANCE from "../../shared/assets/img/IconBalance.svg"
+import ICONTRANS from "../../shared/assets/img/IconT.svg"
+import ICONWIDTH from "../../shared/assets/img/IconWidth.svg"
 import { NavLink } from "react-router-dom"
 
 const Sidebar = () => {

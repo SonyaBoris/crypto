@@ -1,17 +1,10 @@
 import s from "./index.module.css"
 import { Link } from "react-router-dom"
-import ARROW from "../../assets/img/arrow.svg"
-import MINUS from "../../assets/img/minus.svg"
+import ARROW from "../../shared/assets/img/minus.svg"
+import MINUS from "../../shared/assets/img/minus.svg"
 import { useState } from "react"
-import Currency from "../Currency"
-
-export const mockUser = {
-  name: "Max",
-  lastName: "Flint",
-  id: 98746580,
-  wallet: "tHY97gfpsdf450y987Lv",
-  balance: 170673,
-}
+import Currency from "../../entities/currencies/ui/Currency"
+import { mockUser } from "../../entities/user/api/data"
 
 const Greet = () => {
 
